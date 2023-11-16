@@ -25,9 +25,6 @@ public class rockpaperscissors extends JFrame {
         shapes = new ArrayList<>();
         int numberOfShapes = promptNumberOfShapes();
         for (int i = 0; i < numberOfShapes; i++) {
-         //   int x = getRandomCoordinate(FRAME_WIDTH - (SHAPE_SIZE * 2));
-         //   int y = getRandomCoordinate(FRAME_HEIGHT - (SHAPE_SIZE * 2));
-         //   int shapeType = getRandomShapeType();
             shapes.add(new Shape(getRandomCoordinate(FRAME_WIDTH - (SHAPE_SIZE*2) ), getRandomCoordinate(FRAME_HEIGHT-(SHAPE_SIZE*2)), 0));
             shapes.add(new Shape(getRandomCoordinate(FRAME_WIDTH- (SHAPE_SIZE*2)), getRandomCoordinate(FRAME_HEIGHT-(SHAPE_SIZE*2)), 1));
             shapes.add(new Shape(getRandomCoordinate(FRAME_WIDTH- (SHAPE_SIZE*2)), getRandomCoordinate(FRAME_HEIGHT-(SHAPE_SIZE*2)), 2));
